@@ -1,8 +1,16 @@
 @import 'variables';
-@import 'base';
 @import 'mixins';
+@import 'base';
 
 // LAYOUT //////////////////////////////////
 
     // Home / Accueil
-    @import 'header';
+    @import 'layout/home/header';
+    @import 'layout/home/hero';
+    @import 'layout/home/a-propos';
+    @import 'layout/home/services';
+    @import 'layout/home/en-plus';
+    @import 'layout/home/avis';
+    @import 'layout/home/partenaires';
+    @import 'layout/home/form-devis';
+    @import 'layout/home/footer';

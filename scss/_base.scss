@@ -1,0 +1,84 @@
+// BODY 
+body {
+    margin : 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $medium-size;
+    background-color: $bg-color;
+
+
+    @include responsive(small){
+    
+        p, a, label {
+            font-size : $small-size;
+        }
+
+        h1{
+            font-size: $xlarge-size;
+        }
+
+        h2, h3{
+            font-size: $medium-size;
+        }
+        h4{
+            font-size: $small-size;
+        }
+    
+    }
+    
+    @include responsive(large){
+        p, a, label {
+            font-size : $small-size;
+        }
+
+        h1{
+            font-size: $large-size;
+        }
+
+        h2, h3{
+            font-size: $xlarge-size;
+        }
+        h4{
+            font-size: $medium-size;
+        }
+    }
+
+}
+
+
+// Typographie 
+.roboto {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    @include logo;
+}
+
+img{
+    max-width: 100%;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}
+
+h1, h2, h3, h4, a, p, ul, li, label{
+    font-family: $primary-font;
+    margin: 5px;
+}
+
+
+a, li{
+    text-decoration: none;
+    list-style: none;
+    color : inherit;
+}
+
+.bold {
+    font-weight: 600;
+}
+

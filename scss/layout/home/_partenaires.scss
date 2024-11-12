@@ -1,0 +1,3 @@
+.partenaires {
+    @include flex($direction : column, $justify : center, $align : center)
+}

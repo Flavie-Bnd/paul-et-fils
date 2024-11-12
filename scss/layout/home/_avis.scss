@@ -1,0 +1,16 @@
+.avis{
+
+    .title-section {
+        @include title ($black, $medium-size, $text-align-center);
+    }
+
+    .avis-jm{
+        text-align: center;
+        @include flex($direction : row, $justify : center, $align : center);
+        padding: $padding-section;
+        div{
+            width: 80%;
+        }
+    }
+    
+}

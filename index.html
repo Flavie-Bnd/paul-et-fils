@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul et Fils</title>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./images/logo-paul-et-fils.png" type="image/x-icon">
+
+    <!-- GOOGLE FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- STYLE  -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
+    
     <!-- NAVBAR --------------------------------------- -->
     <header>
+        
         <nav class="navbar">
             <ul class="logo">
-                <a href="index.html"><img src=".//images/logo-paul-et-fils.png" alt="Logo Paul et Fils">Paul et Fils</a>
+                <a href="index.html"><img src=".//images/logo-paul-et-fils.png"  width="54" height="54" alt="Logo Paul et Fils"></a>
+                <a class="logo-text" href="index.html">Paul et Fils</a>
             </ul>
         
             <ul>
@@ -25,7 +35,7 @@
             </ul>
 
             <ul>
-                <li><a href="#devis">Devis Gratuit</a></li>
+                <li><a class="button" href="#devis">Devis Gratuit</a></li>
             </ul>
         </nav>
     </header>
@@ -33,78 +43,84 @@
     <!-- HERO --------------------------------------- -->
 <section id="hero">
     <h1>Déménager n'a jamais été aussi facile</h1>
-    
-    <div class="box-hero1">
-        <h4>Appelez-nous</h4>
-        <a href="tel+330123456789">01 23 45 67 89</a>
-    </div>
 
-    <div class="box-hero2 ">
-        <h4>Commencer en ligne</h4>
-        <a href="#devis">Devis gratuit en quelques secondes</a>
+    <div class="container">
+        <div class="box-hero box-hero1">
+            <h4>Appelez-nous</h4>
+            <a href="tel+330123456789">01 23 45 67 89</a>
+        </div>
+
+        <div class="box-hero box-hero2 ">
+            <h4>Commencer en ligne</h4>
+            <a href="#devis">Devis gratuit en quelques secondes</a>
+        </div>
     </div>
 </section>
 
 <!--  A PROPOS -------------------------------------- -->
 <section class="a-propos">
     <div class="text">
-        <h2>Paul et fils Déménagement</h2>
+        <h2 class="title-section">Paul et fils Déménagement</h2>
         <p>Paragraphe. Double cliquez ici ou cliquez sur Modifier texte pour ajouter votre propre text ou changer de police. Décrivez vos services à vos visiteurs.
         </p>
-        <a href="a-propos.html">À propos de nous</a>
+        <a class="button" href="a-propos.html">À propos de nous</a>
     </div>
 
     <img src="./images/ho——e-porte-carton.webp" alt="déménageur">
 </section>
 
-<!--  SEVICES -------------------------------------------- -->
+<!--  SERVICES -------------------------------------------- -->
 <section class="services">
-    <h2>Nos services</h2>
+    <h2 class="title-section">Nos services</h2>
     <!--  -->
-    <div class="box box1">
+    <div class="row row1">
+    <div class="box-service">
         <img src="./images/2hommes-camionnette.webp" alt="deux hommes demagements">
-        <h3>Déménagement à proximité</h3>
+        <h3 class="subtitle">Déménagement à proximité</h3>
         <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-        <a href="#">Lire plus</a>
+        <a class="button" href="#">Lire plus</a>
     </div>
     <!--  -->
-    <div class="box box2">
+    <div class="box-service">
         <img src="./images/camionnette.webp" alt="camionette">
-        <h3>Déménagement longue distance</h3>
+        <h3 class="subtitle">Déménagement longue distance</h3>
         <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-        <a href="#">Lire plus</a>
+        <a class="button" href="#">Lire plus</a>
     </div>
+</div>
+<div class="row row2">
     <!--  -->
-    <div class="box box3">
+    <div class="box-service">
         <img src="./images/garage.webp" alt="garage">
-        <h3>Services de stockage</h3>
+        <h3 class="subtitle">Services de stockage</h3>
         <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-        <a href="#">Lire plus</a>
+        <a class="button" href="#">Lire plus</a>
     </div>
     <!--  -->
-    <div class="box box4">
+    <div class="box-service">
         <img src="./images/carton.webp" alt="cartons">
-        <h3>Emballer et déballer</h3>
+        <h3 class="subtitle">Emballer et déballer</h3>
         <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Présentez-vous et votre entreprise.</p>
-        <a href="#">Lire plus</a>
+        <a class="button" href="#">Lire plus</a>
     </div>
+</div>
 </section>
 
 <!-- EN PLUS ------------------------------------------ -->
 <section class="aussi">
-        <h2>Un service de confiance</h2>
+        <h2 class="title-section">Un service de confiance</h2>
     <div>
-        <div class="box-aussi1">
+        <div class="box-aussi box1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 448L64 448l0-224 64 0 0-64-64 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l224 0c35.3 0 64-28.7 64-64l0-64-64 0 0 64zm-64-96l224 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L224 0c-35.3 0-64 28.7-64 64l0 224c0 35.3 28.7 64 64 64z"/></svg>
             <h3>Déménagement longue distance</h3>
         </div>
 
-        <div class="box-aussi2">
+        <div class="box-aussi box2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 448L64 448l0-224 64 0 0-64-64 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l224 0c35.3 0 64-28.7 64-64l0-64-64 0 0 64zm-64-96l224 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L224 0c-35.3 0-64 28.7-64 64l0 224c0 35.3 28.7 64 64 64z"/></svg>
             <h3>Assurance sur vos biens</h3>
         </div>
 
-        <div class="box-aussi3">
+        <div class="box-aussi box3">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 448L64 448l0-224 64 0 0-64-64 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l224 0c35.3 0 64-28.7 64-64l0-64-64 0 0 64zm-64-96l224 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L224 0c-35.3 0-64 28.7-64 64l0 224c0 35.3 28.7 64 64 64z"/></svg>
             <h3>95% de taux de recommandation</h3>
         </div>
@@ -113,10 +129,13 @@
 
     <!-- SATISFACTION ----------------------------------- -->
     <section class="avis">
-        <h2>Nos clients satisfaits</h2>
-        <div>
-            <p>« Je suis un témoignage. Cliquez ici pour me modifier et valoriser votre activité ».</p>
-            <p>Jean Martin</p>
+        <h2 class="title-section">Nos clients satisfaits</h2>
+        <div class="avis-jm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <div><p>« Je suis un témoignage. Cliquez ici pour me modifier et valoriser votre activité ».</p>
+            <p class="bold">Jean Martin</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
         </div>
     </section>
 
@@ -132,32 +151,39 @@
     <!-- DEVIS ---------------------------------------- -->
     <section class="form-devis">
         <div>
-            <h3>Votre devis gratuit</h3>
+            <h3 class="title-section">Votre devis gratuit</h3>
             <p>Paragraphe. Cliquez ici pour ajouter votre propre texte et le modifier.</p>
         </div>
-        <div class="form">
+
             <form class="form-container">
+
+            <!-------------------------------->
+
+            <div class="line line1">
                 <!-- Ville de déménagement -->
                 <div class="form-group">
-                    <label for="ville-demenagement">Ville de déménagement</label>
+                    <label for="ville-demenagement">Ville de déménagement *</label>
                     <input type="text" id="ville-demenagement" name="ville-demenagement" required>
                 </div>
-            
                 <!-- Ville d'emménagement -->
                 <div class="form-group">
-                    <label for="ville-emmenagement">Ville d'emménagement</label>
+                    <label for="ville-emmenagement">Ville d'emménagement *</label>
                     <input type="text" id="ville-emmenagement" name="ville-emmenagement" required>
                 </div>
-            
+            </div>
+
+            <!-------------------------------->
+
+            <div class="line line2">
                 <!-- Date de déménagement -->
                 <div class="form-group">
-                    <label for="date-demenagement">Date de déménagement</label>
+                    <label for="date-demenagement">Date de déménagement *</label>
                     <input type="date" id="date-demenagement" name="date-demenagement" required>
                 </div>
             
                 <!-- Nombre de pièces -->
                 <div class="form-group">
-                    <label for="nombre-pieces">Nombre de pièces</label>
+                    <label for="nombre-pieces">Nombre de pièces *</label>
                     <select id="nombre-pieces" name="nombre-pieces" required>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -167,7 +193,11 @@
                         <option value="6">6+</option>
                     </select>
                 </div>
-            
+            </div>
+
+            <!-------------------------------->
+
+            <div class="line line3">
                 <!-- Nom -->
                 <div class="form-group">
                     <label for="nom">Nom</label>
@@ -179,17 +209,23 @@
                     <label for="tel">Téléphone</label>
                     <input type="tel" id="tel" name="tel" required>
                 </div>
-            
-                <button type="submit" class="submit-btn">Envoyer</button>
+            </div>
+
+            <!-------------------------------->
+            <div class="line button">
+                <button type="submit">Envoyer</button>
+            </div>
+
             </form>
-        </div>
     </section>
 
     <!-- FOOTER -------------------------------------- -->
     <footer>
         <div class="column column1">
             <div class="logo">
-                <a href="index.html"><img src=".//images/logo-paul-et-fils.png" alt="Logo Paul et Fils">Paul et Fils</a>
+                <a href="index.html"><img src=".//images/logo-paul-et-fils.png"  width="54" height="54" alt="Logo Paul et Fils"></a>
+                <a class="logo-text" href="index.html">Paul et Fils</a>
+            </div>
             </div>
             <p>Numéro de licence : 123-456-7890
             </p>

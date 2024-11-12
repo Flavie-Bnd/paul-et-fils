@@ -1,0 +1,42 @@
+header {
+    background-color: $black;
+    height: auto;
+    nav {
+        @include flex($direction : column, $justify : space-between, $align : center);
+
+        ul {
+            @include flex($direction : row, $justify : center, $align : center);
+            padding: 0;
+            li {
+                padding : 5px;
+                a {
+                    color: $white;
+                }
+
+                .button {
+                    @include button($primary-logo-color, $white, $black);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width : 1040px) {
+
+        header {
+            height: auto;
+
+            nav {
+                @include flex($direction : row, $justify : space-between, $align : center);
+                ul {
+                    a{
+                        padding: 0 10px;
+                        transition: transform 0.5s ease;
+                    }
+                    a:hover{
+                        color: $primary-logo-color;
+                    }
+                }
+            }
+    }
+}

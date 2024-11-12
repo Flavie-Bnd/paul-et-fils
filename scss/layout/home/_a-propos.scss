@@ -1,0 +1,44 @@
+.a-propos{
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-logo-color;
+    
+    .text {
+        padding: $padding-section;
+        height: 30vh;
+        
+        .title-section{
+        @include title ($white, $xlarge-size, $text-align-left);
+        
+    }
+
+        .button {
+            @include button($black, $black, $white);
+            margin-top: 30px;
+        }
+    }
+
+    img{
+        height: 40vh;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
+@media (min-width : 1040px) {
+
+    .a-propos {
+        @include flex($direction : row, $justify : center, $align :center);
+        height: 50vh;
+
+        .text{
+            width: 50%;
+        }
+
+        .img{
+            width: 50%;
+            height: auto;
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+.form-devis{
+    @include flex($direction : column, $justify : center, $align : center);
+    background-color: $primary-logo-color;
+    padding: $padding-section;
+
+    .title-section {
+        @include title($white, $xlarge-size, $text-align-center);
+        margin : 0;
+    }
+    
+    .form-container{
+        .line{
+            @include flex($direction : column, $justify : start, $align : start);
+            @include devis-form ();
+            
+            .form-group{
+                @include flex($direction : column, $justify : center, $align : start)
+            }
+        }
+
+}
+}

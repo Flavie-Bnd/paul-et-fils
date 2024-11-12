@@ -1,1 +1,399 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 23px;
+  background-color: #F7F7F7;
+}
+@media (min-width: 330px) {
+  body p, body a, body label {
+    font-size: 16px;
+  }
+  body h1 {
+    font-size: 32px;
+  }
+  body h2, body h3 {
+    font-size: 23px;
+  }
+  body h4 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1040px) {
+  body p, body a, body label {
+    font-size: 16px;
+  }
+  body h1 {
+    font-size: 48px;
+  }
+  body h2, body h3 {
+    font-size: 32px;
+  }
+  body h4 {
+    font-size: 23px;
+  }
+}
+
+.roboto {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  font-size: 12px;
+  font-family: "Roboto";
+}
+.logo a.logo-text {
+  color: #fff;
+  font-weight: 500;
+  width: 30px;
+  line-height: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  width: 16px;
+  height: 16px;
+}
+
+h1, h2, h3, h4, a, p, ul, li, label {
+  font-family: "Roboto";
+  margin: 5px;
+}
+
+a, li {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+header {
+  background-color: #000000;
+  height: auto;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+header nav ul li {
+  padding: 5px;
+}
+header nav ul li a {
+  color: #fff;
+}
+header nav ul li .button {
+  background-color: #FF592A;
+  color: #000000;
+  font-family: "Roboto";
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (min-width: 1040px) {
+  header {
+    height: auto;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul a {
+    padding: 0 10px;
+    transition: transform 0.5s ease;
+  }
+  header nav ul a:hover {
+    color: #FF592A;
+  }
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  padding: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url("/images/homme-carton-camionnette.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#hero h1 {
+  color: #fff;
+  font-size: 48px;
+  text-align: left;
+  font-family: "Roboto";
+}
+#hero .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+#hero .box-hero {
+  width: 40%;
+  height: 50%;
+  padding: 20px;
+}
+#hero .box-hero1 {
+  background-color: #000000;
+  color: #fff;
+}
+#hero .box-hero2 {
+  background-color: #FF592A;
+  color: #000000;
+}
+
+@media (min-width: 1040px) {
+  #hero h1 {
+    width: 50%;
+  }
+  #hero .container .box-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 22%;
+    height: auto;
+  }
+}
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  background-color: #FF592A;
+}
+.a-propos .text {
+  padding: 20px;
+  height: 30vh;
+}
+.a-propos .text .title-section {
+  color: #fff;
+  font-size: 32px;
+  text-align: left;
+  font-family: "Roboto";
+}
+.a-propos .text .button {
+  background-color: #000000;
+  color: #fff;
+  font-family: "Roboto";
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.a-propos img {
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+@media (min-width: 1040px) {
+  .a-propos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .a-propos .text {
+    width: 50%;
+  }
+  .a-propos .img {
+    width: 50%;
+    height: auto;
+  }
+}
+.services {
+  margin: 10px;
+}
+.services .title-section {
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  font-family: "Roboto";
+}
+.services .box-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.services .box-service .subtitle {
+  color: #000000;
+  font-size: 23px;
+  text-align: left;
+  font-family: "Roboto";
+  margin-bottom: 0;
+}
+.services .box-service .button {
+  background-color: #FF592A;
+  color: #000000;
+  font-family: "Roboto";
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.aussi .title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  font-family: "Roboto";
+  height: 30vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(/images/2hommes-portent-un-meuble.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+.aussi .box-aussi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.aussi .box1, .aussi .box2 {
+  color: #fff;
+  fill: #fff;
+}
+.aussi .box1 {
+  background-color: #000000;
+}
+.aussi .box2 {
+  background-color: #FF592A;
+}
+.aussi .box3 {
+  background-color: #fff;
+}
+
+.avis .title-section {
+  color: #000000;
+  font-size: 23px;
+  text-align: center;
+  font-family: "Roboto";
+}
+.avis .avis-jm {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.avis .avis-jm div {
+  width: 80%;
+}
+
+.partenaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-devis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF592A;
+  padding: 20px;
+}
+.form-devis .title-section {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  font-family: "Roboto";
+  margin: 0;
+}
+.form-devis .form-container .line {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 10px;
+}
+.form-devis .form-container .line label {
+  margin: 5px 0 0 0;
+}
+.form-devis .form-container .line input, .form-devis .form-container .line select {
+  padding: 10px;
+  margin: 5px 0;
+  width: 230px;
+  border: none;
+}
+.form-devis .form-container .line button {
+  background-color: #000000;
+  color: #fff;
+  font-family: "Roboto";
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 120px;
+  align-self: flex-end;
+}
+.form-devis .form-container .line .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+footer {
+  background-color: #000000;
+  padding: 20px;
+  color: #fff;
+}
+footer .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 10px 0;
+  padding-bottom: 20px;
+}
+footer .column .logo {
+  align-self: center;
+}
+footer .column .social {
+  align-self: center;
+}
+footer .column .social svg {
+  fill: #fff;
+  margin: 20px;
+}/*# sourceMappingURL=main.css.map */

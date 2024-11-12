@@ -1,0 +1,55 @@
+#hero{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    padding : $padding-section;
+    background-image : linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url('/images/homme-carton-camionnette.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1{
+        @include title($white, $large-size, $text-align-left)
+        
+    }
+
+    .container {
+        @include flex($direction : row, $justify : start, $align :start);
+    }
+
+    .box-hero{
+        width: 40%;
+        height: 50%;
+        padding : 20px;
+    }
+
+    .box-hero1{
+        background-color: $black;
+        color: $white;
+    }
+    .box-hero2{
+        background-color: $primary-logo-color;
+        color : $black
+    }
+}
+
+
+@media (min-width : 1040px) {
+
+    #hero{
+        
+        h1{ 
+            width: 50%;
+        }
+        .container {
+            .box-hero{
+                @include flex($direction : column, $justify : center, $align :start);
+                width: 22%;
+                height: auto;
+        }
+        
+    }
+    
+}
+}

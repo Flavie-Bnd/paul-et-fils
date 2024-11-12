@@ -1,0 +1,33 @@
+.services {
+    margin : 10px;
+    .title-section{
+        @include title ($black, $xlarge-size, $text-align-center);
+    }
+
+    .box-service{
+        @include flex($direction : column, $justify : center, $align :start);
+        padding: $padding-section;
+        background-color: $white;
+        margin-bottom : 20px;
+
+        .subtitle {
+            @include title ($black, $medium-size, $text-align-left);
+            margin-bottom : 0;
+        }
+        .button{
+            @include button($primary-logo-color, $white, $black);
+        }
+    }
+}
+
+@media (min-width : 1040px) {
+
+    .services{
+        
+    .row {
+        @include flex($direction : row, $justify : center, $align :start);
+    }
+        
+    }
+}
+}

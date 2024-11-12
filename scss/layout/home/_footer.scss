@@ -1,0 +1,24 @@
+footer{
+    background-color: $black;
+    padding: $padding-section;
+    color : $white;
+
+    .column{
+        @include flex($direction : column, $justify : center, $align : start);
+        margin: 10px 0;
+        padding-bottom: $padding-section;
+
+        .logo {
+            align-self: center;
+        }
+
+        .social{
+            align-self : center;
+        svg{
+            fill : $white;
+            margin: 20px;
+        }
+    }
+}
+    
+}
