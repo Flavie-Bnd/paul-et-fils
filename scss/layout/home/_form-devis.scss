@@ -20,3 +20,11 @@
 
 }
 }
+
+@media (min-width : 1040px) {
+    .form-devis {
+        @include flex($direction : row, $justify : center, $align : center);
+    }
+
+    
+}

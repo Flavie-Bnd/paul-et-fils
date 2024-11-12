@@ -8,7 +8,7 @@
         @include flex($direction : column, $justify : center, $align :start);
         padding: $padding-section;
         background-color: $white;
-        margin-bottom : 20px;
+        margin : 10px;
 
         .subtitle {
             @include title ($black, $medium-size, $text-align-left);
@@ -29,5 +29,4 @@
     }
         
     }
-}
 }

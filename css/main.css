@@ -78,6 +78,10 @@ a, li {
   font-weight: 600;
 }
 
+section {
+  padding: 3% 0;
+}
+
 header {
   background-color: #000000;
   height: auto;
@@ -243,7 +247,7 @@ header nav ul li .button {
   align-items: start;
   padding: 20px;
   background-color: #fff;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 .services .box-service .subtitle {
   color: #000000;
@@ -262,6 +266,14 @@ header nav ul li .button {
   font-size: 16px;
 }
 
+@media (min-width: 1040px) {
+  .services .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
 .aussi .title-section {
   display: flex;
   flex-direction: column;
@@ -300,6 +312,17 @@ header nav ul li .button {
   background-color: #fff;
 }
 
+@media (min-width: 1040px) {
+  .aussi .title-section {
+    height: 50vh;
+  }
+  .aussi div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .avis .title-section {
   color: #000000;
   font-size: 23px;
@@ -325,6 +348,14 @@ header nav ul li .button {
   align-items: center;
 }
 
+@media (min-width: 1040px) {
+  .partenaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .form-devis {
   display: flex;
   flex-direction: column;
@@ -374,6 +405,14 @@ header nav ul li .button {
   align-items: start;
 }
 
+@media (min-width: 1040px) {
+  .form-devis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer {
   background-color: #000000;
   padding: 20px;

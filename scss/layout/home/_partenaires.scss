@@ -1,3 +1,10 @@
 .partenaires {
     @include flex($direction : column, $justify : center, $align : center)
 }
+
+
+@media (min-width : 1040px) {
+    .partenaires {
+    @include flex($direction : row, $justify : space-around, $align : center)
+}
+}
